@@ -53,7 +53,7 @@ class Command(NoArgsCommand):
 		
 		css_file_location = '%ssprites.css' % getattr(settings, 'SPRITE_CSS_OUTPUT')
 
-		sprite_url = '%simages/sprites.r%s.png' % (settings.STATIC_URL, version_stamp)
+		sprite_url = '../images/sprites.r%s.png' % version_stamp
 		
 		iconCssFile = open(css_file_location, 'w')
 		
